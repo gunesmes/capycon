@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Mesut Güneş"]
   spec.email         = ["gunesmes@gmail.com"]
 
-  spec.summary       = %q{TODO: Run Capybara in the console without Ruby on Rails project}
-  spec.description   = %q{TODO: Before writing your test for your automation project which is not written by ROR, you can test the steps with CapyCon via your terminal}
-  spec.homepage      = "TODO: http:www.testrisk.com"
+  spec.summary       = %q{Run Capybara in the console without Ruby on Rails project}
+  spec.description   = %q{Before writing your test for your automation project which is not written by ROR, you can test the steps with CapyCon via your terminal}
+  spec.homepage      = "http:www.testrisk.com"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
