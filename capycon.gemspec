@@ -1,16 +1,16 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "capy_con/version"
+require "capycon/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "capy_con"
-  spec.version       = CapyCon::VERSION
+  spec.name          = "capycon"
+  spec.version       = Capycon::VERSION
   spec.authors       = ["Mesut Güneş"]
   spec.email         = ["gunesmes@gmail.com"]
 
   spec.summary       = %q{Run Capybara in the console without Ruby on Rails project}
-  spec.description   = %q{Before writing your test for your automation project which is not written by ROR, you can test the steps with CapyCon via your terminal}
+  spec.description   = %q{Before writing your test for your automation project which is not written by ROR, you can test the steps with Capycon via your terminal}
   spec.homepage      = "http:www.testrisk.com"
   spec.license       = "MIT"
 

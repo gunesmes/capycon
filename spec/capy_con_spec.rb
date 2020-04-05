@@ -1,6 +1,6 @@
-RSpec.describe CapyCon do
+RSpec.describe Capycon do
   it "has a version number" do
-    expect(CapyCon::VERSION).not_to be nil
+    expect(Capycon::VERSION).not_to be nil
   end
 
   it "does something useful" do

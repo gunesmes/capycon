@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "capy_con"
+require "capycon"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
