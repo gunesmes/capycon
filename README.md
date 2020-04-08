@@ -26,51 +26,51 @@ run capybara on the console
 
 ```shell script
 ~/P/p/c/capy_con (master ⚡→☡) pry
-[1] pry(main)> require "capycon"
+[1] pry(main)> 
+[2] pry(main)> require "capycon"
 
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  *                                                                           *
+  *                capycon - CAPYBARA CONSOLE                                 *
+  *                                                                           *
+  *  Default driver is :driver_iphone6_vertical_visible                       *
+  *  To set the site name as environment variable:                            *
+  *    echo 'export SITE_NAME=http://www.github.com' >> ~/.bash_profile       *
+  *                                                                           *
+  *  To set the driver  as environment variable:                              *
+  *    echo 'export DRIVER=driver_chrome_visible' >> ~/.bash_profile          *
+  *                   OR                                                      *
+  *  You can set the driver by one of the following options                   *
+  *                                                                           *
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
-    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-    *                                                                           *
-    *                capycon - CAPYBARA CONSOLE                                 *
-    *                                                                           *
-    *  Default driver is :driver_iphone6_vertical_visible                       *
-    *  To set the site name as environment variable:                            *
-    *    echo 'export SITE_NAME=http://www.github.com' >> ~/.bash_profile       *
-    *                                                                           *
-    *  To set the driver  as environment variable:                              *
-    *    echo 'export DRIVER=driver_chrome_visible' >> ~/.bash_profile          *
-    *                   OR                                                      *
-    *  You can set the driver by one of the following options                   *
-    *                                                                           *
-    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-   Capybara.current_driver = :driver_chrome_visible
-   Capybara.current_driver = :driver_chrome_fullscreen_headless
-   Capybara.current_driver = :driver_iphone6_vertical_visible
-   Capybara.current_driver = :driver_iphone6_vertical_headless
-   Capybara.current_driver = :driver_iphone6_horizontal_visible
-   Capybara.current_driver = :driver_iphone6_horizontal_headless
-   Capybara.current_driver = :driver_iphone6plus_vertical_headless
-   Capybara.current_driver = :driver_iphone6plus_horizontal_headless
-   Capybara.current_driver = :driver_ipad_vertical_visible
-   Capybara.current_driver = :driver_ipad_horizontal_visible
-   Capybara.current_driver = :driver_ipad_vertical_headless
-   Capybara.current_driver = :driver_ipad_horizontal_headless
-   Capybara.current_driver = :driver_samsungs6_vertical_headless
-   Capybara.current_driver = :driver_samsungs6_horizontal_headless
-   Capybara.current_driver = :driver_samsungsTabA_horizontal_headless
-   Capybara.current_driver = :driver_samsungsTabA_vertical_headless
-   Capybara.current_driver = :driver_desktop_headless
+    Capybara.current_driver = :driver_chrome_visible
+    Capybara.current_driver = :driver_chrome_fullscreen_headless
+    Capybara.current_driver = :driver_iphone6_vertical_visible
+    Capybara.current_driver = :driver_iphone6_vertical_headless
+    Capybara.current_driver = :driver_iphone6_horizontal_visible
+    Capybara.current_driver = :driver_iphone6_horizontal_headless
+    Capybara.current_driver = :driver_iphone6plus_vertical_headless
+    Capybara.current_driver = :driver_iphone6plus_horizontal_headless
+    Capybara.current_driver = :driver_ipad_vertical_visible
+    Capybara.current_driver = :driver_ipad_horizontal_visible
+    Capybara.current_driver = :driver_ipad_vertical_headless
+    Capybara.current_driver = :driver_ipad_horizontal_headless
+    Capybara.current_driver = :driver_samsungs6_vertical_headless
+    Capybara.current_driver = :driver_samsungs6_horizontal_headless
+    Capybara.current_driver = :driver_samsungsTabA_horizontal_headless
+    Capybara.current_driver = :driver_samsungsTabA_vertical_headless
+    Capybara.current_driver = :driver_desktop_headless
 => true
-[2] pry(main)> Capybara.current_driver = :driver_chrome_visible
+[3] pry(main)> Capybara.current_driver = :driver_chrome_visible
 => :driver_chrome_visible
-[3] pry(main)> visit "/"
+[4] pry(main)> visit "/"
 => nil
-[4] pry(main)> find(".js-site-search-form > label > input").send_keys "capycon"
+[5] pry(main)> find(".js-site-search-form > label > input").send_keys "capycon"
 => #<Capybara::Node::Element tag="input" path="/HTML/BODY[1]/DIV[1]/HEADER[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/LABEL[1]/INPUT[1]">
-[5] pry(main)> find(".js-site-search-form > label > input").send_keys :return
+[6] pry(main)> find(".js-site-search-form > label > input").send_keys :return
 => Obsolete #<Capybara::Node::Element>
-[6] pry(main)> page.has_content? "gunesmes/capycon"
+[7] pry(main)> page.has_content? "gunesmes/capycon"
 => true
 ```
 
