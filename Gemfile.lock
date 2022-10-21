@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     capycon (0.1.4)
-      bundler (>= 2.2.33)
+      bundler (~> 2.2, >= 2.2.33)
       capybara (~> 3.0)
       selenium-webdriver (~> 3.0)
 
@@ -24,7 +24,9 @@ GEM
     diff-lcs (1.5.0)
     matrix (0.4.2)
     mini_mime (1.1.2)
-    nokogiri (1.13.8-arm64-darwin)
+    nokogiri (1.13.9-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.13.9-x86_64-linux)
       racc (~> 1.4)
     public_suffix (5.0.0)
     racc (1.6.0)
@@ -55,9 +57,10 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
-  bundler (>= 2.2.33)
+  bundler (~> 2.2, >= 2.2.33)
   capycon!
   rake (~> 12.3)
   rspec (~> 3.0)
